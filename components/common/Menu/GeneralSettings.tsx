@@ -24,7 +24,7 @@ const GeneralSettings = () => {
       <div className="flex flex-col gap-4">
         <Label>Size</Label>
         <Slider
-          defaultValue={[16]}
+          defaultValue={[32]}
           min={1}
           max={128}
           step={1}
@@ -35,9 +35,9 @@ const GeneralSettings = () => {
       <div className="flex flex-col gap-4">
         <Label>Maximum Height</Label>
         <Slider
-          defaultValue={[2.5]}
+          defaultValue={[1.5]}
           min={1.0}
-          max={5.0}
+          max={2.5}
           step={0.1}
           onValueChange={(value) => updateSetting("height", value[0])}
         />
